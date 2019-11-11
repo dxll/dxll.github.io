@@ -1,19 +1,17 @@
 <?php
 
-# Receive user input
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+if (isset($_POST['submit'])){
+	# Receive user input
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$message = $_POST['message'];
 
-# Filter user input
-function filter_email_header($form_field) {
-return preg_replace('/[\0\n\r\|\!\/\<\>\^\$\%\*\&]+/','',$form_field);
+	$mailTo = "katherinelindev@gmail.com";
+	$heaers = "From: ".$email;
+	$txt = "You have received an email from ".$name.".\n\n".$message;
+
+	mail($mailTo, $txt, $headers);
+	header("Location: index.html?mailsend");
 }
-
-$email = filter_email_header($email);
-
-# Send email
-$headers = "From: $email\n";
-$sent = mail('katherinelindev@gmail.com', 'Message Form Submission', $name, $message, $headers);
 
 ?>
