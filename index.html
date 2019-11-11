@@ -1,0 +1,154 @@
+<!-- Katherine Lin Portfolio-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Katherine Lin - Web Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="media/favicon.png" type="image/png" sizes="16x16">
+    <!-- CSS Styles -->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div>
+      <div class="center box-1">
+        <h1 class="title-name">katherine lin</h1>
+        <h2 class="title-sub">Web Developer</h2>
+      </div>
+    </div>
+
+    <div>
+      <div class="center box-2">
+        <p class="desc-p">
+          Hello, I'm Katherine. I am a Front-End Web Developer based in Rochester, NY. 
+          If you'd like to get in touch, feel free to contact me <a href=#leaveamessage>here</a>.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="center box-3">
+          <div class="card-deck">
+            <div class="card" data-toggle="modal" data-target="#CMACmodal">
+              <img class="card-img-top pointer" src="media/cmaclg.jpg" alt="CMAC">
+            </div>
+            <div class="card" data-toggle="modal" data-target="#pronatmodal">
+              <img class="card-img-top pointer" src="media/pronatlg.jpg" alt="ProNatural Brands">
+            </div>
+            <div class="card" data-toggle="modal" data-target="#sociusmodal">
+              <img class="card-img-top pointer" src="media/sociuslg.jpg" alt="Socius">
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="box-4">
+        <p id="leaveamessage" class="title-name">
+          Leave a message
+        </p>
+
+        <form name="leaveamessage" action="msg-email.php" method="post">
+          <div class="form-group">
+            <label for="inputName" class="desc-p">Name</label>
+            <input type="text" name ="name" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="desc-p">Email address</label>
+            <input type="email" name ="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="subject" class="desc-p">Subject</label>
+            <textarea name ="message" class="form-control msg-textarea" id="subject" placeholder="Leave a message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <div class="center footer">
+          <div class="desc-p">katherinelindev[at]gmail.com</div>
+      </div>
+    </div>
+
+<!-- ******************************************************************************************************** -->
+
+    <!-- CMAC Modal -->
+    <div class="modal fade" id="CMACmodal" tabindex="-1" role="dialog" aria-labelledby="CMACmodal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="CMACmodal">CMAC</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="media/modal-imgs/cmac.jpg" alt="CMAC Events" class="modal-img">
+            <p>Developed the new Constellation Brands Marvin Sands Performing Arts Center website within a team. A design blueprint was created by a designer and the developers built it with the WordPress CMS. After it was launched, the team and I ran a quality check through the site to make sure things looked as they should.<br><br>
+            <i>Technologies used: HTML, CSS, JavaScript, WordPress</i></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" onclick="window.open('https://www.cmacevents.com/')">View Website</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ProNatural Brands Modal -->
+    <div class="modal fade" id="pronatmodal" tabindex="-1" role="dialog" aria-labelledby="pronatmodal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pronatmodal">ProNatural Brands</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="media/modal-imgs/pronat.jpg" alt="ProNatural Brands" class="modal-img">
+            <p>Within a team, developed the ProNatural Brands website in WordPress. Followed a design blueprint and adjusted to changes along the way.<br><br>
+            <i>Technologies used: HTML, CSS, WordPress</i></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" onclick="window.open('https://www.pronaturalbrands.com/')">View Website</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Socius Modal -->
+    <div class="modal fade" id="sociusmodal" tabindex="-1" role="dialog" aria-labelledby="sociusmodal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sociusmodal">Socius</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="media/modal-imgs/socius.jpg" alt="Socius" class="modal-img">
+            <p>Completed development of the Socius Family Office website with WordPress. The site was partially built when I took on the task. Followed a design blueprint and finished building the site to look as close as possible to the design. Post-launch, I looked through the site to do a quality check and made sure there were no problems.<br><br>
+            <i>Technologies used: HTML, CSS, JavaScript, WordPress</i></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" onclick="window.open('https://www.socius.com/')">View Website</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+/* Katherine Lin Portfolio CSS */
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i|Open+Sans+Condensed:300,700|Source+Sans+Pro:300|Tajawal:400,700');
+
+.hide {
+	display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Form CSS*/
+
+.form-control:focus {
+    border-color: #ebbab4 !important;
+    box-shadow: 0 0 0 0.2rem rgba(235, 186, 180, 0.4) !important;
+}
+
+.btn-primary {
+    background-color: #ebbab4 !important;
+    border-color: #ebbab4 !important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(235, 186, 180, 0.4) !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #e19c94 !important;
+    border-color: #e19c94 !important;
+}
+
+/*End Form CSS*/
+
+a {
+	color: #ebbab4 !important;
+}
+
+a:hover {
+    color: #e19c94 !important;
+}
+
+p {
+	font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 17px;
+	color: #3a3a3a;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.box-1 {
+	background-image: url("../media/herobg.jpg");
+	background-color: #ebbab4;
+	background-size: cover;
+    background-position: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+
+}
+
+.box-2 {
+	background-color: #f9f6f0;
+	padding-top: 7%;
+	padding-bottom: 7%;
+}
+
+.box-3 {
+    background-color: #ffffff;
+	padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.box-4 {
+	background-color: #f9f6f0;
+	padding-left: 10%;
+    padding-right: 50%;
+	padding-top: 3%;
+	padding-bottom: 4%;
+}
+
+.footer {
+    background-color: #ffffff;
+	padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#leaveamessage {
+	padding-bottom: 25px;
+}
+
+.msg-textarea {
+	height: 200px;
+}
+
+.center {
+	text-align: center;
+}
+
+.title-name {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 54px;
+	color: #232323;
+	font-weight: 400;
+	font-style: italic;
+	margin: 0;
+}
+
+.title-sub {
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #3a3a3a;
+	font-size: 22px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.desc-p {
+	font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 21px;
+	color: #3a3a3a;
+}
+
+.modal-img {
+	width: 100%;
+	padding-bottom: 25px;
+}
