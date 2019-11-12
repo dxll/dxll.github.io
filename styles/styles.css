@@ -9,28 +9,33 @@ html {
   scroll-behavior: smooth;
 }
 
-/*Form CSS*/
+/*Buttons CSS*/
 
 .form-control:focus {
     border-color: #ebbab4 !important;
     box-shadow: 0 0 0 0.2rem rgba(235, 186, 180, 0.4) !important;
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary {
     background-color: #ebbab4 !important;
     border-color: #ebbab4 !important;
 }
 
-.btn-primary.focus, .btn-primary:focus {
+.btn-primary:hover, .btn-secondary:hover {
+	background-color: #e7b2ac !important;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-secondary.focus, .btn-secondary:focus {
     box-shadow: 0 0 0 0.2rem rgba(235, 186, 180, 0.4) !important;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle,
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
     background-color: #e19c94 !important;
     border-color: #e19c94 !important;
 }
 
-/*End Form CSS*/
+/*End Buttons CSS*/
 
 a {
 	color: #ebbab4 !important;
